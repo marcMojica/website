@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts | Marc Mojica</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Portfolio">
+    <meta name="keywords" content="Marc, Mojica, Portfolio, Design, Programming">
+    <meta name="author" content="Marc Mojica">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Main Navigation Menu -->
+    <header>
+        <a href="index.html"><img class="home" src="images/home_icon.png" alt="Home Icon"></a>
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+
+        <!-- Mobile & PC Side/Navigation Bar -->
+        <aside class="sidebar">
+            <nav>
+                <h2>Menu</h2>
+                <div class="nav-link">
+                    <small>Learn more about me</small>
+                    <p><a href="about.html">About</a></p>
+                </div>
+    
+                <div class="nav-link">
+                    <small>Check out my projects</small>
+                    <p><a href="works.html">Works</a></p>
+                </div>
+    
+                <div class="nav-link">
+                    <small>Let's stay in touch</small>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+            </nav>
+        </aside>
+    </header>
+
+    <!-- Primary Webpage Content -->
+    <main>
+        <!-- Webpage Splash Section -->
+        <section id="opening" aria-label="article">
+            <div class="quote-text">
+                <small>"so... want to conquer the world<span class="gold-highlight"> together?</span>"</small>
+            </div>
+
+            <div id="main-headings">
+                <picture>
+                    <source media="(min-width: 600px)" srcset="images/contacts_main_big.png">
+                    <img src="images/contacts_main.png" alt="Image of Text saying 'Let's Talk', with a Globe in Background">
+                </picture>
+            </div>
+
+            <div class="summary-text">
+                <small>contact me and we can <span class="gold-highlight">work as a team.</span></small>
+            </div>
+        </section>
+
+        <!-- Contacting Information Sections -->
+        <section id="contacts" aria-label="article">
+            <div id="contact-info">
+                <div id="contacts-headings">
+                    <h1>Contact Me</h1>
+                    <h2>Let's work together</h2>
+                </div>
+    
+                <!-- Large Screen Details with Contact Icons -->
+                <div id="contacts-icons">
+                    <div class="contact-icon">
+                        <img src="images/mail_icon_big.png" alt="Email Icon">
+                        <p>mmojica@email.com</p>
+                    </div>
+
+                    <div class="contact-icon">
+                        <img src="images/phone_icon_big.png" alt="Phone Icon">
+                        <p>+64 27 855 3525</p>
+                    </div>
+                </div>
+    
+                <!-- Small Screen Details with Only Text Contact Information-->
+                <div id="contact-details">
+                    <p><span class="bold-text">Marc Mojica</span></p>
+                    <p>mmojica@eemail.com</p>
+                    <p>+64 27 855 3525</p>
+                </div>
+            </div>
+
+            <form id="contacts-form">
+                <!-- Primary Form for Inputting Personal Contact Details -->
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Your Full Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Your Message"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Webpage Footer/Sitemap -->
+    <footer>
+        <p class="title">More</p>
+        <div class="footer-sitemap">
+            <h2>Done reading?</h2>
+            <nav>
+                <div class="sitemap-link">
+                    <small>Learn more about me</small>
+                    <p><a href="about.html">About</a></p>
+                </div>
+    
+                <div class="sitemap-link">
+                    <small>Check out my projects</small>
+                    <p><a href="works.html">Works</a></p>
+                </div>
+    
+                <div class="sitemap-link">
+                    <small>Let's stay in touch</small>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+    
+                <div class="footer-social-media">
+                    <img src="images/mail_icon.png" alt="Email Button Icon">
+                    <img src="images/facebook_icon.png" alt="Facebook Button Icon">
+                    <img src="images/linkedin_icon.png" alt="LinkedIn Button Icon">
+                </div>
+                <small>Also find me here</small>
+                <p class="copyright">&copy; Marc Mojica 2023 </p>
+            </nav>
+        </div>
+    </footer>
+    <!-- Website Main Script for Navigation -->
+    <script src="script.js"></script>
+
+</body>
+</html>
