@@ -16,3 +16,33 @@ checkbox.addEventListener('change', function () {
         window.scrollTo(0, scrollPosition);
     }
 });
+
+document.getElementById('contacts-form').addEventListener('submit', async function (event) {
+    event.preventDefault();
+    const form = event.target;
+    const data = new FormData(form);
+    const status = document.getElementById('form-status');
+  
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+  
+      if (response.ok) {
+        status.textContent = "Thank you for the message! I will get back to you as soon as possible!";
+        status.style.color = "green";
+        form.reset();
+      } else {
+        status.textContent = "It seems that were was a problem sending your message.";
+        status.style.color = "red";
+      }
+    } catch (error) {
+      status.textContent = "Network error. Please try again later.";
+      status.style.color = "red";
+    }
+  
+    status.classList.remove("hidden");
+  });
+  

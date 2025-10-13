@@ -90,21 +90,22 @@
                     <p>marcldmojica@gmail.com</p>
                     <p>+64 27 442 9898</p>
                 </div>
-            </div>
+            </div>>
 
-            <form id="contacts-form">
-                <!-- Primary Form for Inputting Personal Contact Details -->
+            <form id="contacts-form" action="https://formspree.io/f/xvgwvapq" method="POST">
                 <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="full-name" placeholder="Your Full Name">
+                <input type="text" id="full-name" name="full-name" placeholder="Your Full Name" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" cols="50" placeholder="Your Message"></textarea>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Your Message" required></textarea>
 
                 <input type="submit" value="Submit">
+                <p id="form-status"></p>
             </form>
+            
         </section>
     </main>
 
