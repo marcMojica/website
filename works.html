@@ -6,7 +6,8 @@
     <title>Works | Marc Mojica</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Digital Portfolio">
+    <meta name="description"
+        content="Projects by Marc Mojica: embedded systems, FPGA, software, CAD and motion design.">
     <meta name="keywords" content="Marc, Mojica, Portfolio, Design, Programming">
     <meta name="author" content="Marc Mojica">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -51,7 +52,8 @@
         <!-- Webpage Splash Section -->
         <section id="opening" aria-label="article">
             <div class="quote-text">
-                <small>“find a job you love, and you will <span class="gold-highlight">never </span>have to work a day in your life”</small>
+                <small>“find a job you love, and you will <span class="gold-highlight">never </span>have to work a day
+                    in your life”</small>
             </div>
 
             <div id="main-headings">
@@ -62,48 +64,56 @@
             </div>
 
             <div class="summary-text">
-                <small>view my <span class="gold-highlight">projects </span>made from <span class="gold-highlight">devotion...</span></small>
+                <small>view my <span class="gold-highlight">projects </span>made from <span
+                        class="gold-highlight">devotion...</span></small>
             </div>
         </section>
 
         <!-- Showcasing Works Sections -->
 
-                <section class="works-one">
+        <section class="works-one">
             <div class="works-text">
                 <h2>Remote-Controlled System Using IR Sensors, Servos, and H-Bridge</h2>
                 <h1>Bluetooth Controlled Trace-Lining Robot</h1>
-                <p>Tasked with a challenge of creating a robot that follows a line and finish a maze, I created several designs 
-                    that considers several control system techniques, alongside both automated and wireless control. </p>
+                <p>Tasked with a challenge of creating a robot that follows a line and finish a maze, I created several
+                    designs
+                    that considers several control system techniques, alongside both automated and wireless control.
+                </p>
                 <p>One of the control systems I used was an H Bridge with a motor, where I had to consider the voltage
                     and current ratings to efficiently drive the DC Motors. This was then implemented via Pluse Width
-                    Modulation (PWM) controls to vary speed with Duty Cycle variables. This was then replaced with Servos 
+                    Modulation (PWM) controls to vary speed with Duty Cycle variables. This was then replaced with
+                    Servos
                     using 4 different functions depending on the variations of which IR sensor is turned on or off.</p>
-                <p>I also created an application that allows for the wireless control of the robot, where it uses the 
+                <p>I also created an application that allows for the wireless control of the robot, where it uses the
                     Bluetooth Module and respective buttons to control it in cardinal directions.</p>
             </div>
 
             <div class="works-images">
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/robot_hbridge.png">
-                        <img src="images/robot_hbridge.png" alt="">
+                    <a data-fancybox="project-1-gallery" href="images/robot_hbridge.png">
+                        <img loading="lazy" decoding="async" src="images/robot_hbridge.png"
+                            alt="H-bridge motor driver circuit for the line-following robot">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/robot_pcb.png">
-                        <img src="images/robot_pcb.png" alt="">
+                    <a data-fancybox="project-1-gallery" href="images/robot_pcb.png">
+                        <img loading="lazy" decoding="async" src="images/robot_pcb.png"
+                            alt="PCB for the robot sensor and motor circuit">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/robot_servos.png">
-                        <img src="images/robot_servos.png" alt="">
+                    <a data-fancybox="project-1-gallery" href="images/robot_servos.png">
+                        <img loading="lazy" decoding="async" src="images/robot_servos.png"
+                            alt="Servo-driven version of the line-following robot">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/robot_code.png">
-                        <img src="images/robot_code.png" alt="">
+                    <a data-fancybox="project-1-gallery" href="images/robot_code.png">
+                        <img loading="lazy" decoding="async" src="images/robot_code.png"
+                            alt="Control code for the Bluetooth line-following robot">
                     </a>
                 </div>
             </div>
@@ -111,83 +121,259 @@
 
                 <section class="works-one">
             <div class="works-text">
+                <h2>Cloud Storage Solution in Embedded Systems</h2>
+                <h1>ESP32 Camera Raspberry Pi Visual Capture Storage</h1>
+                <p>After hearing a relative encounter a small car accident that warranted a benefit for footage along
+                    insurance,
+                    our family decided on acquiring an all in one dashcam. The idea was that it should be able
+                    to capture footage continuously while driving, where the footage recorded would then automatically
+                    be stored in
+                    an internal local drive, and when back home, the footage is added to cloud based storage. The
+                    footage can also
+                    be viewed real time in an application interface in mobile devices.</p>
+                <p>When researching existing product lineups, they were either priced highly, or are embedded in car
+                    systems.
+                    Additionally, no researched system allowed for seamless local and cloud based storage solutions. By
+                    using an
+                    ESP32 Camera Module, alongside a Raspberry Pi 4B, I was able to create a secure shell connection
+                    between the two, where the camera module records the footage whilst communicating with the Pi to
+                    stored locally
+                    securely. A web server then exists within an application to view that footage. The Pi then connects
+                    to the router
+                    through a Static IP for the footage to then automatically be stored in a secure database built
+                    through Apache Derby.</p>
+            </div>
+
+            <div class="works-images">
+                <div class="tab">
+                    <a data-fancybox="project-6-gallery" href="images/streamsafe_projectplan.png">
+                        <img loading="lazy" decoding="async" src="images/streamsafe_projectplan.png"
+                            alt="Project plan for the dashcam storage system">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-6-gallery" href="images/streamsafe_proposal.png">
+                        <img loading="lazy" decoding="async" src="images/streamsafe_proposal.png"
+                            alt="Project proposal for the dashcam storage system">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-6-gallery" href="images/streamsafe_backend.png">
+                        <img loading="lazy" decoding="async" src="images/streamsafe_backend.png"
+                            alt="Backend storage setup for the dashcam system">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-6-gallery" href="images/streamsafe_docu.png">
+                        <img loading="lazy" decoding="async" src="images/streamsafe_docu.png"
+                            alt="Documentation for the dashcam storage system">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="works-one">
+            <div class="works-text">
+                <h2>Custom Designing in 3D Computer Assisted Design (CAD)</h2>
+                <h1>Personal Bike Commission Proposal Design</h1>
+                <p>Having a friend that works in a bike store has many benefits. Most of it pertains to how to maintain,
+                    restore,
+                    or improve a bike, but another plus is the ability to ask about options. A vision I had in mind was
+                    a bike of specific parameters and measurements. From the crankset connector, to the ISO pipe, and
+                    the front roller chain sprocket, I needed a way to present my ideas to create my ideal bike.</p>
+                <p>Apart from researching materials, I decided to compile my vision through an actual medium: Computer
+                    Assisted
+                    Design in 3D. With my prior experience in 3D design, I was able to create the proposed product I had
+                    in mind,
+                    compiling 23 individual parts with materials adhering to ISO standards, and inorganic shapes with
+                    specified
+                    dimensions fit of standard. </p>
+                <p>In the end, the product was my vision, so the overall costs would have compounded and it was why
+                    the design is still currently on standby.</p>
+            </div>
+
+            <div class="works-images">
+                <div class="tab">
+                    <a data-fancybox="project-7-gallery" href="images/bike_main.png">
+                        <img loading="lazy" decoding="async" src="images/bike_main.png"
+                            alt="Main render of the custom bike design">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-7-gallery" href="images/bike_assembly.png">
+                        <img loading="lazy" decoding="async" src="images/bike_assembly.png"
+                            alt="Assembly of the bike parts in CAD">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-7-gallery" href="images/bike_sch.png">
+                        <img loading="lazy" decoding="async" src="images/bike_sch.png"
+                            alt="Schematic drawing of the bike design">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-7-gallery" href="images/bike_iteration.png">
+                        <img loading="lazy" decoding="async" src="images/bike_iteration.png"
+                            alt="Design iterations of the bike">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="works-one">
+            <div class="works-text">
+                <h2>Responsive Design in Web Development</h2>
+                <h1>This Portfolio Website</h1>
+                <p>This website is a project in itself. For my Year 13 Digital Technologies course, I designed and
+                    programmed
+                    my personal portfolio from scratch, starting with Figma wireframes and building mobile-first one
+                    page at a
+                    time with feedback from my stakeholders. I have kept improving it since.</p>
+                <p>Their feedback shaped many decisions: a full-screen sidebar with an animated burger icon, which I
+                    extended
+                    in JavaScript to lock scrolling and remember the scroll position, text that scales with clamp(), and
+                    a
+                    Fancybox gallery with hover zoom after a Lightbox library caused scrollbar issues. Flexbox, grid,
+                    srcset
+                    images, and media queries adapt it from small phones to wide monitors.</p>
+                <p>I worked in agile iterations with GitHub version control, validated my HTML and CSS, compressed
+                    images for
+                    faster loading, and tested across several browsers and devices.</p>
+            </div>
+
+            <div class="works-images">
+                <div class="tab">
+                    <a data-fancybox="project-site-gallery" href="images/site_wireframes.png">
+                        <img loading="lazy" decoding="async" src="images/site_wireframes.png"
+                            alt="Low to mid fidelity wireframes for the portfolio website">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-site-gallery" href="images/site_final.png">
+                        <img loading="lazy" decoding="async" src="images/site_final.png"
+                            alt="Final outcome of the portfolio website across desktop and mobile layouts">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-site-gallery" href="images/finalll.png">
+                        <img loading="lazy" decoding="async" src="images/finalll.png"
+                            alt="Desktop works page of the portfolio website">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-site-gallery" href="images/site_phone.png">
+                        <img loading="lazy" decoding="async" src="images/site_phone.png"
+                            alt="Mobile layout of the portfolio website shown in a phone frame">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="works-one">
+            <div class="works-text">
                 <h2>UI/UX in Web Development</h2>
                 <h1>Website for a Homestay Company</h1>
-                <p>Using a brief that I was given, I was tasked to create a website for a Homestay Company, where I will 
+                <p>Using a brief that I was given, I was tasked to create a website for a Homestay Company, where I will
                     add details for their services in a modern, organized site.</p>
-                <p>As this was the first time I developed a design for a Homestay Company, I challenged myself to develop 
-                    an outcome that is fit of purpose despite confronting the unfamiliar. Taking inspiration from existing 
-                    websites and consulting my stakeholders with various design drafts, I ensured that I was able to meet 
+                <p>As this was the first time I developed a design for a Homestay Company, I challenged myself to
+                    develop
+                    an outcome that is fit of purpose despite confronting the unfamiliar. Taking inspiration from
+                    existing
+                    websites and consulting my stakeholders with various design drafts, I ensured that I was able to
+                    meet
                     all their goals.</p>
-                <p>Using Figma and Adobe XD to create my wireframes for the design, alongside using skills in Markup/Styling 
+                <p>Using Figma and Adobe XD to create my wireframes for the design, alongside using skills in
+                    Markup/Styling
                     In HTML/CSS alongside JavaScript, I programmed a website with end user considerations in mind.</p>
             </div>
 
             <div class="works-images">
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/homestay1.webp">
-                        <img src="images/homestay1.webp" alt="">
+                    <a data-fancybox="project-2-gallery" href="images/homestay1.webp">
+                        <img loading="lazy" decoding="async" src="images/homestay1.webp"
+                            alt="Homestay company website design, view 1">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/homestay2.png">
-                        <img src="images/homestay2.png" alt="">
+                    <a data-fancybox="project-2-gallery" href="images/homestay2.png">
+                        <img loading="lazy" decoding="async" src="images/homestay2.png"
+                            alt="Homestay company website design, view 2">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/homestay3.webp">
-                        <img src="images/homestay3.webp" alt="">
+                    <a data-fancybox="project-2-gallery" href="images/homestay3.webp">
+                        <img loading="lazy" decoding="async" src="images/homestay3.webp"
+                            alt="Homestay company website design, view 3">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/homestay4.webp">
-                        <img src="images/homestay4.webp" alt="">
+                    <a data-fancybox="project-2-gallery" href="images/homestay4.webp">
+                        <img loading="lazy" decoding="async" src="images/homestay4.webp"
+                            alt="Homestay company website design, view 4">
                     </a>
                 </div>
             </div>
         </section>
 
-                <section class="works-one">
+        <section class="works-one">
             <div class="works-text">
                 <h2>Storyboarding in Motion Graphics</h2>
                 <h1>Awards Ceremony Video Series for a Hobby Community</h1>
-                <p>I edited three videos for an international hobby community's annual awards: a minor awards showcase, 
-                    a group video category, and a top performers ranking. Working with a small production team, I spent 
+                <p>I edited three videos for an international hobby community's annual awards: a minor awards showcase,
+                    a group video category, and a top performers ranking. Working with a small production team, I spent
                     around 55 hours on design and 85 hours on editing in early 2026.</p>
-                <p>Each video started with its own storyboard. The first used a certificate theme with a prize ribbon and 
-                    progress indicator, after I scrapped a lamp interface concept for looking too modular. The second used a 
-                    monitor theme of UI windows, kept 2D to protect the scope. For the third, I ideated eight designs but cut 
+                <p>Each video started with its own storyboard. The first used a certificate theme with a prize ribbon
+                    and
+                    progress indicator, after I scrapped a lamp interface concept for looking too modular. The second
+                    used a
+                    monitor theme of UI windows, kept 2D to protect the scope. For the third, I ideated eight designs
+                    but cut
                     it to two mirrored ones for the Top 20 and Top 10 to fit the time.</p>
-                <p>In After Effects, I used 3D cameras, CC Page Turn, CC Jaws, CC Particle World, Venetian Blinds, and light 
-                    leaks. As integrating Blender in AE2022 was difficult, I used EXR sequences of a 3D trophy render from my 
+                <p>In After Effects, I used 3D cameras, CC Page Turn, CC Jaws, CC Particle World, Venetian Blinds, and
+                    light
+                    leaks. As integrating Blender in AE2022 was difficult, I used EXR sequences of a 3D trophy render
+                    from my
                     teammates. My biggest lesson was to choose the music first!</p>
             </div>
 
             <div class="works-images">
                 <div class="tab">
                     <a data-fancybox="project-eleven-gallery" href="images/storyboard.png">
-                        <img src="images/storyboard.png" alt="Early storyboard sketches including the scrapped lamp interface concept">
+                        <img loading="lazy" decoding="async" src="images/storyboard.png"
+                            alt="Early storyboard sketches including the scrapped lamp interface concept">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-eleven-gallery" href="images/render.png">
-                        <img src="images/render.png" alt="Rendered 3D trophy animation">
+                        <img loading="lazy" decoding="async" src="images/render.png" alt="Rendered 3D trophy animation">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-eleven-gallery" href="images/motinae.png">
-                        <img src="images/motinae.png" alt="Motion graphics animation for the awards sequence">
+                        <img loading="lazy" decoding="async" src="images/motinae.png"
+                            alt="Motion graphics animation for the awards sequence">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-eleven-gallery" href="images/renderFull.png">
-                        <img src="images/renderFull.png" alt="Full render of the awards sequence">
+                        <img loading="lazy" decoding="async" src="images/renderFull.png"
+                            alt="Full render of the awards sequence">
                     </a>
                 </div>
             </div>
@@ -199,210 +385,154 @@
                 <h1>Sports Hobby Animated Compilation</h1>
                 <p>In my community, I received requests to compile a event videos, so I first created drafts for logos
                     and themes, where I then developed low fidelity drafts into static graphic design storyboards.</p>
-                <p>Through my workflow, I drew out ideas on paper, then digitised them through Photoshop and Illustrator. 
-                    I created vectorised assets that can then be animated through After Effects, where I would create the motion graphics.</p>
-                <p>The opening made use of adjustment layers such as gaussian blur, turbulent displace, grain, and fractal noise; reveals 
-                    used wipes with camera controlled transitions to present text on ellipse paths in parallax and icons with wiggle 
-                    expressions. The Round 2 opening used variables and parameters subtracted in an expression normalized for repulsion. 
-                    This follows objects in sinusoid paths towards an opening transition that used parenting, track mattes and alpha blending.</p>
+                <p>Through my workflow, I drew out ideas on paper, then digitised them through Photoshop and
+                    Illustrator.
+                    I created vectorised assets that can then be animated through After Effects, where I would create
+                    the motion graphics.</p>
+                <p>The opening made use of adjustment layers such as gaussian blur, turbulent displace, grain, and
+                    fractal noise; reveals
+                    used wipes with camera controlled transitions to present text on ellipse paths in parallax and icons
+                    with wiggle
+                    expressions. The Round 2 opening used variables and parameters subtracted in an expression
+                    normalized for repulsion.
+                    This follows objects in sinusoid paths towards an opening transition that used parenting, track
+                    mattes and alpha blending.</p>
             </div>
 
             <div class="works-images">
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/animation_intro.png">
-                        <img src="images/animation_intro.png" alt="">
+                    <a data-fancybox="project-4-gallery" href="images/animation_intro.png">
+                        <img loading="lazy" decoding="async" src="images/animation_intro.png"
+                            alt="Opening sequence of the animated event compilation">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/animation_2ndopening.png">
-                        <img src="images/animation_2ndopening.png" alt="">
+                    <a data-fancybox="project-4-gallery" href="images/animation_2ndopening.png">
+                        <img loading="lazy" decoding="async" src="images/animation_2ndopening.png"
+                            alt="Round 2 opening sequence of the animated compilation">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/animation_resolve.png">
-                        <img src="images/animation_resolve.png" alt="">
+                    <a data-fancybox="project-4-gallery" href="images/animation_resolve.png">
+                        <img loading="lazy" decoding="async" src="images/animation_resolve.png"
+                            alt="Resolve sequence of the animated compilation">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/animation_iteration.png">
-                        <img src="images/animation_iteration.png" alt="">
+                    <a data-fancybox="project-4-gallery" href="images/animation_iteration.png">
+                        <img loading="lazy" decoding="async" src="images/animation_iteration.png"
+                            alt="Design iterations for the animated compilation">
                     </a>
                 </div>
             </div>
         </section>
 
 
-                <!-- Nth Project Presented -->
+        <!-- Nth Project Presented -->
         <section class="works-one">
             <div class="works-text">
                 <h2>GUI in Programming</h2>
                 <h1>Basic Facts Quiz Application</h1>
-                <p>As my cousin was about to start Year 5 in Primary School, he asked me about what kind of Maths they would 
-                    learn in the Senior Year Level. Rather than just showing my old Basic Facts papers, I decided that it would
+                <p>As my cousin was about to start Year 5 in Primary School, he asked me about what kind of Maths they
+                    would
+                    learn in the Senior Year Level. Rather than just showing my old Basic Facts papers, I decided that
+                    it would
                     likely be much more fun and interactive to have an app to practice!</p>
-                <p>Although several Math Learning Apps already existed, this one would particularly cater to the criteria in that 
-                    in NZ Schools and in that specific Year Group. Through Python, I imported the Tkinter library to create the GUI. 
-                    This was first design in Figma, where I iteratively developed the design to match my cousin's preferences.</p>
-                <p>The final app has four categories for the fundamental operations learnt during that year level. Whenever my 
-                    cousin wants a higher or lower difficulty, I can always change it too. Additionally, when a wrong answer was 
-                    typed, a file would be outputted for practice reviews! The application also has comprehensive iterative documentaiton.</p>
+                <p>Although several Math Learning Apps already existed, this one would particularly cater to the
+                    criteria in that
+                    in NZ Schools and in that specific Year Group. Through Python, I imported the Tkinter library to
+                    create the GUI.
+                    This was first design in Figma, where I iteratively developed the design to match my cousin's
+                    preferences.</p>
+                <p>The final app has four categories for the fundamental operations learnt during that year level.
+                    Whenever my
+                    cousin wants a higher or lower difficulty, I can always change it too. Additionally, when a wrong
+                    answer was
+                    typed, a file would be outputted for practice reviews! The application also has comprehensive
+                    iterative documentaiton.</p>
             </div>
 
             <div class="works-images">
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/mathsquiz_mainui.png">
-                        <img src="images//mathsquiz_mainui.png" alt="">
+                    <a data-fancybox="project-5-gallery" href="images/mathsquiz_mainui.png">
+                        <img loading="lazy" decoding="async" src="images/mathsquiz_mainui.png"
+                            alt="Main menu of the maths quiz app">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/mathsquiz_internalui.png">
-                        <img src="images/mathsquiz_internalui.png" alt="">
+                    <a data-fancybox="project-5-gallery" href="images/mathsquiz_internalui.png">
+                        <img loading="lazy" decoding="async" src="images/mathsquiz_internalui.png"
+                            alt="Question screen of the maths quiz app">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/mathsquiz_exportui.png">
-                        <img src="images/mathsquiz_exportui.png" alt="">
+                    <a data-fancybox="project-5-gallery" href="images/mathsquiz_exportui.png">
+                        <img loading="lazy" decoding="async" src="images/mathsquiz_exportui.png"
+                            alt="Exported practice file of incorrect answers">
                     </a>
                 </div>
 
                 <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/mathsquiz_dev.png">
-                        <img src="images/mathsquiz_dev.png" alt="">
+                    <a data-fancybox="project-5-gallery" href="images/mathsquiz_dev.png">
+                        <img loading="lazy" decoding="async" src="images/mathsquiz_dev.png"
+                            alt="Development documentation for the maths quiz app">
                     </a>
                 </div>
             </div>
         </section>
-
-        <section class="works-one">
-            <div class="works-text">
-                <h2>Cloud Storage Solution in Embedded Systems</h2>
-                <h1>ESP32 Camera Raspberry Pi Visual Capture Storage</h1>
-                <p>After hearing a relative encounter a small car accident that warranted a benefit for footage along insurance, 
-                    our family decided on acquiring an all in one dashcam. The idea was that it should be able 
-                    to capture footage continuously while driving, where the footage recorded would then automatically be stored in 
-                    an internal local drive, and when back home, the footage is added to cloud based storage. The footage can also 
-                    be viewed real time in an application interface in mobile devices.</p>
-                <p>When researching existing product lineups, they were either priced highly, or are embedded in car systems. 
-                    Additionally, no researched system allowed for seamless local and cloud based storage solutions. By using an 
-                    ESP32 Camera Module, alongside a Raspberry Pi 4B, I was able to create a secure shell connection 
-                    between the two, where the camera module records the footage whilst communicating with the Pi to stored locally 
-                    securely. A web server then exists within an application to view that footage. The Pi then connects to the router 
-                    through a Static IP for the footage to then automatically be stored in a secure database built through Apache Derby.</p>
-            </div>
-
-            <div class="works-images">
-                <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/streamsafe_projectplan.png">
-                        <img src="images/streamsafe_projectplan.png" alt="">
-                    </a>
-                </div>
-
-                <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/streamsafe_proposal.png">
-                        <img src="images/streamsafe_proposal.png" alt="">
-                    </a>
-                </div>
-
-                <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/streamsafe_backend.png">
-                        <img src="images/streamsafe_backend.png" alt="">
-                    </a>
-                </div>
-
-                <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/streamsafe_docu.png">
-                        <img src="images/streamsafe_docu.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="works-one">
-            <div class="works-text">
-                <h2>Custom Designing in 3D Computer Assisted Design (CAD)</h2>
-                <h1>Personal Bike Commission Proposal Design</h1>
-                <p>Having a friend that works in a bike store has many benefits. Most of it pertains to how to maintain, restore, 
-                    or improve a bike, but another plus is the ability to ask about options. A vision I had in mind was 
-                    a bike of specific parameters and measurements. From the crankset connector, to the ISO pipe, and 
-                    the front roller chain sprocket, I needed a way to present my ideas to create my ideal bike.</p>
-                <p>Apart from researching materials, I decided to compile my vision through an actual medium: Computer Assisted 
-                    Design in 3D. With my prior experience in 3D design, I was able to create the proposed product I had in mind, 
-                    compiling 23 individual parts with materials adhering to ISO standards, and inorganic shapes with specified 
-                    dimensions fit of standard. </p>
-                <p>In the end, the product was my vision, so the overall costs would have compounded and it was why 
-                    the design is still currently on standby.</p>
-            </div>
-
-            <div class="works-images">
-                <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/bike_main.png">
-                        <img src="images/bike_main.png" alt="">
-                    </a>
-                </div>
-
-                <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/bike_assembly.png">
-                        <img src="images/bike_assembly.png" alt="">
-                    </a>
-                </div>
-
-                <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/bike_sch.png">
-                        <img src="images/bike_sch.png" alt="">
-                    </a>
-                </div>
-
-                <div class="tab">
-                    <a data-fancybox="project-two-gallery" href="images/bike_iteration.png">
-                        <img src="images/bike_iteration.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
-
 
         <section class="works-one">
             <div class="works-text">
                 <h2>Autonomous Navigation in Embedded Systems</h2>
                 <h1>Maze-Solving Robot Using PSoC and A* Pathfinding</h1>
-                <p>For a university team project, my group of four built a robot that follows a projected black line maze, 
-                    visits four checkpoints in order, and stops at its destination. I coordinated our meetings and 
+                <p>For a university team project, my group of four built a robot that follows a projected black line
+                    maze,
+                    visits four checkpoints in order, and stops at its destination. I coordinated our meetings and
                     documentation, and led the pathfinding side of the project.</p>
-                <p>To sense the 60Hz projector whilst ignoring 120Hz ambient light, we used a MATLAB Fast Fourier Transform to 
-                    design a passive 50-100Hz bandpass filter for four phototransistors. We then iterated through six sensor 
+                <p>To sense the 60Hz projector whilst ignoring 120Hz ambient light, we used a MATLAB Fast Fourier
+                    Transform to
+                    design a passive 50-100Hz bandpass filter for four phototransistors. We then iterated through six
+                    sensor
                     layouts and four PCB revisions, driven by a PSoC controller.</p>
-                <p>I compared five algorithms in MATLAB (BFS, Dijkstra, DFS, Greedy Best First, and A*). A* guaranteed the 
-                    shortest path whilst exploring only 42 nodes against 136 for BFS, so I helped integrate it with the robot, 
-                    using encoder counts and sensors to confirm each junction before pivoting, with PID keeping it on the line.</p>
+                <p>I compared five algorithms in MATLAB (BFS, Dijkstra, DFS, Greedy Best First, and A*). A* guaranteed
+                    the
+                    shortest path whilst exploring only 42 nodes against 136 for BFS, so I helped integrate it with the
+                    robot,
+                    using encoder counts and sensors to confirm each junction before pivoting, with PID keeping it on
+                    the line.</p>
             </div>
 
             <div class="works-images">
                 <div class="tab">
                     <a data-fancybox="project-eight-gallery" href="images/maps2.png">
-                        <img src="images/maps2.png" alt="System architecture and navigation flowchart for the robot">
+                        <img loading="lazy" decoding="async" src="images/maps2.png"
+                            alt="System architecture and navigation flowchart for the robot">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-eight-gallery" href="images/pcb1.png">
-                        <img src="images/pcb1.png" alt="Final PCB layout for the sensor filters and motor wiring">
+                        <img loading="lazy" decoding="async" src="images/pcb1.png"
+                            alt="Final PCB layout for the sensor filters and motor wiring">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-eight-gallery" href="images/pcb2.png">
-                        <img src="images/pcb2.png" alt="Six sensor constellation designs and the chosen arrangement at junctions">
+                        <img loading="lazy" decoding="async" src="images/pcb2.png"
+                            alt="Six sensor constellation designs and the chosen arrangement at junctions">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-eight-gallery" href="images/pcb4.png">
-                        <img src="images/pcb4.png" alt="BFS and A* comparison on a maze, showing nodes explored">
+                        <img loading="lazy" decoding="async" src="images/pcb4.png"
+                            alt="BFS and A* comparison on a maze, showing nodes explored">
                     </a>
                 </div>
             </div>
@@ -412,40 +542,52 @@
             <div class="works-text">
                 <h2>Digital Systems Design in FPGA Hardware</h2>
                 <h1>Flappy Bird Game on an FPGA Using VHDL</h1>
-                <p>For a university mini-project, my group of three built a complete real-time game in hardware: Flappy Bird 
-                    on a Terasic DE0-CV board, played with a PS/2 mouse and displayed through VGA at 640x480 and 60Hz.</p>
-                <p>Written in VHDL as small modules wired at a structural top level, a PLL generates the 25MHz pixel clock 
-                    and the game logic updates once per vertical sync. A four-state finite-state machine controls the menu, 
-                    playing, paused, and game over screens, pipe gaps are randomised with a Galois LFSR, and collisions use 
-                    bounding boxes. I used Python to convert artwork into palette-indexed bitmaps stored in on-chip memory 
+                <p>For a university mini-project, my group of three built a complete real-time game in hardware: Flappy
+                    Bird
+                    on a Terasic DE0-CV board, played with a PS/2 mouse and displayed through VGA at 640x480 and 60Hz.
+                </p>
+                <p>Written in VHDL as small modules wired at a structural top level, a PLL generates the 25MHz pixel
+                    clock
+                    and the game logic updates once per vertical sync. A four-state finite-state machine controls the
+                    menu,
+                    playing, paused, and game over screens, pipe gaps are randomised with a Galois LFSR, and collisions
+                    use
+                    bounding boxes. I used Python to convert artwork into palette-indexed bitmaps stored in on-chip
+                    memory
                     through MIF files.</p>
-                <p>We replaced DIP switch mode selection with mouse-driven menus, and scaled difficulty with pipes passed 
-                    instead of time. The final design used only 5% of the logic elements, with the pixel clock closing timing 
+                <p>We replaced DIP switch mode selection with mouse-driven menus, and scaled difficulty with pipes
+                    passed
+                    instead of time. The final design used only 5% of the logic elements, with the pixel clock closing
+                    timing
                     at 69.78MHz against the 25MHz required.</p>
             </div>
 
             <div class="works-images">
                 <div class="tab">
                     <a data-fancybox="project-nine-gallery" href="images/fsm.png">
-                        <img src="images/fsm.png" alt="System block diagram showing the modules, clock domains, and colour-priority datapath">
+                        <img loading="lazy" decoding="async" src="images/fsm.png"
+                            alt="System block diagram showing the modules, clock domains, and colour-priority datapath">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-nine-gallery" href="images/designs.png">
-                        <img src="images/designs.png" alt="Control FSM state diagram for the menu, playing, paused, and game over states">
+                        <img loading="lazy" decoding="async" src="images/designs.png"
+                            alt="Control FSM state diagram for the menu, playing, paused, and game over states">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-nine-gallery" href="images/flappy1.png">
-                        <img src="images/flappy1.png" alt="Main menu of the Flappy Bird game displayed over VGA">
+                        <img loading="lazy" decoding="async" src="images/flappy1.png"
+                            alt="Main menu of the Flappy Bird game displayed over VGA">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-nine-gallery" href="images/flappy2.png">
-                        <img src="images/flappy2.png" alt="Gameplay screen with the bird, pipes, and score">
+                        <img loading="lazy" decoding="async" src="images/flappy2.png"
+                            alt="Gameplay screen with the bird, pipes, and score">
                     </a>
                 </div>
             </div>
@@ -455,43 +597,47 @@
             <div class="works-text">
                 <h2>Graphic Design in Advertising</h2>
                 <h1>Advertising for a Baking Startup</h1>
-                <p>When I was talking with my friends, one of them mentioned that they recently had idea in 
+                <p>When I was talking with my friends, one of them mentioned that they recently had idea in
                     startup a family business, and they were looking for designers.</p>
-                <p>I took this as an opportunity for me to put my skills into practice and take on something new. 
-                    By asking for more context, I found that they were considering selling donuts, where their family 
-                    wanted a designer that was accessible, reliable, skilled, and had good communication experiences, 
+                <p>I took this as an opportunity for me to put my skills into practice and take on something new.
+                    By asking for more context, I found that they were considering selling donuts, where their family
+                    wanted a designer that was accessible, reliable, skilled, and had good communication experiences,
                     so I took the role.</p>
-                <p>Using my skills in Design, I created 3D renders in reference to their Donut Designs through Blender, 
-                    where I animated them using keyframes and also created Posters to help them in potential advertising.</p>
+                <p>Using my skills in Design, I created 3D renders in reference to their Donut Designs through Blender,
+                    where I animated them using keyframes and also created Posters to help them in potential
+                    advertising.</p>
             </div>
 
             <div class="works-images">
                 <div class="tab">
                     <!-- Uses JS to Present Interactive Gallery -->
                     <a data-fancybox="project-one-gallery" href="images/donut1.webp">
-                        <img src="images/donut1.webp" alt="3D Donut with no colors">
+                        <img loading="lazy" decoding="async" src="images/donut1.webp" alt="3D Donut with no colors">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-one-gallery" href="images/donut2.webp">
-                        <img src="images/donut2.webp" alt="Blender UI showing nodes">
+                        <img loading="lazy" decoding="async" src="images/donut2.webp" alt="Blender UI showing nodes">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-one-gallery" href="images/donut3.webp">
-                        <img src="images/donut3.webp" alt="3D Rendered Chocolate Donut">
+                        <img loading="lazy" decoding="async" src="images/donut3.webp" alt="3D Rendered Chocolate Donut">
                     </a>
                 </div>
 
                 <div class="tab">
                     <a data-fancybox="project-one-gallery" href="images/donut4.PNG">
-                        <img src="images/donut4.PNG" alt="Donut Posters with the caption, even more glaze">
+                        <img loading="lazy" decoding="async" src="images/donut4.PNG"
+                            alt="Donut Posters with the caption, even more glaze">
                     </a>
                 </div>
             </div>
         </section>
+
+    </main>
 
     <!-- Webpage Footer/Sitemap -->
     <footer>
@@ -521,7 +667,8 @@
                     <a href="https://github.com/marcMojica" target="_blank" rel="noopener noreferrer">
                         <img src="images/github_icon.png" alt="GitHub Button Icon">
                     </a>
-                    <a href="https://www.linkedin.com/in/marc-mojica-835191334/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/marc-mojica-835191334/" target="_blank"
+                        rel="noopener noreferrer">
                         <img src="images/linkedin_icon.png" alt="LinkedIn Button Icon">
                     </a>
                 </div>
@@ -534,4 +681,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>

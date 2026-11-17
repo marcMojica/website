@@ -69,10 +69,13 @@ if ('IntersectionObserver' in window && !prefersReducedMotion) {
         rootMargin: '0px 0px -40px 0px'
     });
 
-    revealElements.forEach((element, index) => {
+    // Stagger delay is based on position inside the skills grid, not the whole page
+    const skillItems = Array.from(document.querySelectorAll('#skills .skill-item'));
+
+    revealElements.forEach(element => {
         element.classList.add('reveal-on-scroll');
         if (element.matches('#skills .skill-item')) {
-            element.style.setProperty('--reveal-delay', `${(index % 4) * 90}ms`);
+            element.style.setProperty('--reveal-delay', `${(skillItems.indexOf(element) % 2) * 90}ms`);
         }
         revealObserver.observe(element);
     });

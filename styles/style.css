@@ -1157,3 +1157,118 @@ input#message {
     }
 
 }
+
+/*
+===============
+Intro strip, stats & tech tags
+===============
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+#intro-strip {
+    text-align: center;
+    padding: 6vh 1.5em 2vh;
+}
+
+#intro-strip .intro-tagline {
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    color: var(--foreground);
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin: 0 auto;
+    max-width: 22em;
+}
+
+#intro-strip .intro-sub {
+    font-family: "Sofia Sans";
+    color: var(--light-foreground);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    margin: 1em 0 0;
+}
+
+.cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em 0 1.5em;
+}
+
+.cta-row a {
+    font-family: "Sofia Sans";
+    font-weight: 600;
+    font-size: 1.15rem;
+    text-decoration: none;
+    padding: 0.7em 1.8em;
+    border-radius: 25px;
+    border: 2px solid var(--foreground);
+    transition: background-color 220ms ease, color 220ms ease, transform 220ms ease;
+}
+
+.cta-row .cta-primary {
+    background-color: var(--foreground);
+    color: var(--background);
+}
+
+.cta-row .cta-secondary {
+    background-color: transparent;
+    color: var(--foreground);
+}
+
+.cta-row a:hover {
+    background-color: var(--light-accent);
+    border-color: var(--light-accent);
+    color: var(--background);
+}
+
+.stats {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em 3.5em;
+    margin: 0;
+    padding: 1em 0 0;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats strong {
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    color: var(--accent);
+    line-height: 1.1;
+}
+
+.stats span {
+    font-family: "Sofia Sans";
+    color: var(--light-foreground);
+    font-size: 0.95rem;
+}
+
+.tech-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+.tech-tags li {
+    font-family: "Sofia Sans";
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 0.2em 0.85em;
+}
