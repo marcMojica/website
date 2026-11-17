@@ -11,6 +11,9 @@
     <meta name="author" content="Marc Mojica">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
@@ -121,46 +124,90 @@
 
         <section id="works-preview">
             <p class="title">Works</p>
-            <div class="work-preview">
-                <picture>
-                    <!-- Sets Small Mobile & Large PC Image Sizes -->
-                    <source media="(min-width: 979px)" srcset="images/first_project_preview_big.png">
-                    <img src="images/first_project_preview.png" alt="Poster of 3D Donuts surrounding text">
-                </picture>
-                <div class="work-preview-text">
-                    <h2>Nuts for Donuts</h2>
-                    <p>Using my various skills in Graphic and Motion Design, alongside excellent and flexible
-                        communication abilitis, I developed a campaign to raise awareness in Food Disorders 
-                        with videos, poster, and 3D Assets.</p>
-                </div>
+            <section class="works-one">
+            <div class="works-text">
+                <h2>Autonomous Navigation in Embedded Systems</h2>
+                <h1>Maze-Solving Robot Using PSoC and A* Pathfinding</h1>
+                <p>For a university team project, my group of four built a robot that follows a projected black line maze, 
+                    visits four checkpoints in order, and stops at its destination. I coordinated our meetings and 
+                    documentation, and led the pathfinding side of the project.</p>
+                <p>To sense the 60Hz projector whilst ignoring 120Hz ambient light, we used a MATLAB Fast Fourier Transform to 
+                    design a passive 50-100Hz bandpass filter for four phototransistors. We then iterated through six sensor 
+                    layouts and four PCB revisions, driven by a PSoC controller.</p>
+                <p>I compared five algorithms in MATLAB (BFS, Dijkstra, DFS, Greedy Best First, and A*). A* guaranteed the 
+                    shortest path whilst exploring only 42 nodes against 136 for BFS, so I helped integrate it with the robot, 
+                    using encoder counts and sensors to confirm each junction before pivoting, with PID keeping it on the line.</p>
             </div>
 
-            <div class="work-preview">
-                <picture>
-                    <source media="(min-width: 979px)" srcset="images/second_project_preview_big.png">
-                    <img src="images/second_project_preview.png" alt="Final mockup design of a homestay website">
-                </picture>
-                <div class="work-preview-text">
-                    <h2>Home Sweet Home</h2>
-                    <p>Using my skills in problem solving I assessed my stakeholders specifications and created 
-                        a design to fit their every need. Be it a website for a trave blog, a portfolio, or a  
-                        homestay.</p>
+            <div class="works-images">
+                <div class="tab">
+                    <a data-fancybox="project-eight-gallery" href="images/maps2.png">
+                        <img src="images/maps2.png" alt="System architecture and navigation flowchart for the robot">
+                    </a>
                 </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-eight-gallery" href="images/pcb1.png">
+                        <img src="images/pcb1.png" alt="Final PCB layout for the sensor filters and motor wiring">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-eight-gallery" href="images/pcb2.png">
+                        <img src="images/pcb2.png" alt="Six sensor constellation designs and the chosen arrangement at junctions">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-eight-gallery" href="images/pcb4.png">
+                        <img src="images/pcb4.png" alt="BFS and A* comparison on a maze, showing nodes explored">
+                    </a>
+                </div>
+            </div>
+        </section>
+<section class="works-one">
+            <div class="works-text">
+                <h2>Digital Systems Design in FPGA Hardware</h2>
+                <h1>Flappy Bird Game on an FPGA Using VHDL</h1>
+                <p>For a university mini-project, my group of three built a complete real-time game in hardware: Flappy Bird 
+                    on a Terasic DE0-CV board, played with a PS/2 mouse and displayed through VGA at 640x480 and 60Hz.</p>
+                <p>Written in VHDL as small modules wired at a structural top level, a PLL generates the 25MHz pixel clock 
+                    and the game logic updates once per vertical sync. A four-state finite-state machine controls the menu, 
+                    playing, paused, and game over screens, pipe gaps are randomised with a Galois LFSR, and collisions use 
+                    bounding boxes. I used Python to convert artwork into palette-indexed bitmaps stored in on-chip memory 
+                    through MIF files.</p>
+                <p>We replaced DIP switch mode selection with mouse-driven menus, and scaled difficulty with pipes passed 
+                    instead of time. The final design used only 5% of the logic elements, with the pixel clock closing timing 
+                    at 69.78MHz against the 25MHz required.</p>
             </div>
 
-            <div class="work-preview">
-                <picture>
-                    <source media="(min-width: 979px)" srcset="images/fourth_project_preview_big.png">
-                    <img src="images/fourth_project_preview.png" alt="Final mockup design of a homestay website">
-                </picture>
-                <div class="work-preview-text">
-                    <h2>A Bike That's Right</h2>
-                    <p>Using skills in 3D Computer Assisted Design, I was able to create my own customised
-                        bicycle with it's own size specifications like the seatpost clamp, wheel connectors, 
-                        and handlebars, among others. 
-                    </p>
+            <div class="works-images">
+                <div class="tab">
+                    <a data-fancybox="project-nine-gallery" href="images/fsm.png">
+                        <img src="images/fsm.png" alt="System block diagram showing the modules, clock domains, and colour-priority datapath">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-nine-gallery" href="images/designs.png">
+                        <img src="images/designs.png" alt="Control FSM state diagram for the menu, playing, paused, and game over states">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-nine-gallery" href="images/flappy1.png">
+                        <img src="images/flappy1.png" alt="Main menu of the Flappy Bird game displayed over VGA">
+                    </a>
+                </div>
+
+                <div class="tab">
+                    <a data-fancybox="project-nine-gallery" href="images/flappy2.png">
+                        <img src="images/flappy2.png" alt="Gameplay screen with the bird, pipes, and score">
+                    </a>
                 </div>
             </div>
+        </section>
+        
 
             <div class="button-section">
                 <a href="works.html">More Works</a>
@@ -208,7 +255,7 @@
                     </a>
                 </div>
                 <small>Also find me here</small>
-                <p class="copyright">&copy; Marc Mojica 2025</p>
+                <p class="copyright">&copy; Marc Mojica 2026</p>
             </nav>
         </div>
     </footer>
